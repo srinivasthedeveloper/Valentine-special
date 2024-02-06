@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: pink;
+    color: #333;
+    font-family: sans-serif;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    height: 98vh;
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+
+        .image{
+            width: 25rem;
+            height: 25rem;
+            object-fit: contain;
+            object-position: center;
+            border-radius: 20px;
+        }
+
+        .text{
+            font-size: 2rem;
+            font-weight: 700;
+        }
+    
+        .button-container{
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+            .button{
+                border: none;
+                padding: 10px 20px;
+                border-radius: 10px;
+                cursor: pointer;
+                background-color: white;
+                color: black;
+                font-weight: 700;
+                font-size: 1.2rem;
+            }
+
+            #yes:hover,
+            #yes:focus-visible{
+                background-color: rgb(14, 194, 14);
+                color: white;
+                outline: none;
+            }
+
+            #no:hover{
+                background-color: red;
+                color: white;
+            }
+        }
+    }
+}
